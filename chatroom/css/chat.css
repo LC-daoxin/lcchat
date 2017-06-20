@@ -1,0 +1,314 @@
+@media only screen and (max-width: 500px) {/*手机端 小于500px*/
+    .wrapper {
+        display: none;
+        width:100%;
+        padding: 5px 5px 12px 5px;
+        background-color: rgba(15, 23, 23, 0.4);
+        height: 100%;
+    }
+    .banner h1 {
+        margin: 5px;
+        font-size: 32px;
+        font-weight: bolder;
+    }
+    #historyMsg {
+        border-radius: 1%;
+        height: 73%;
+        background-color: rgba(255, 255, 255, 0.33);
+        overflow: auto;
+        padding: 5px 10px;
+    }
+    footer{
+        display: none;
+    }
+    #emojiWrapper {
+        display: none;
+        width: 100%;
+        bottom: 90px;
+        position: absolute;
+        background-color: rgba(163, 168, 170, 0.53);
+        box-shadow: 0 0 10px #555;
+        border-radius: 2px;
+    }
+    #emojiWrapper img {
+        margin: 2px;
+        padding: 2px;
+        width: 29px;
+        height: 29px;
+    }
+    .message {
+        font-size: 120%;
+    }
+}
+@media only screen and (max-width: 350px) {
+    #historyMsg {
+        border-radius: 1%;
+        height: 71%;
+        background-color: rgba(255, 255, 255, 0.33);
+        overflow: auto;
+        padding: 5px 10px;
+    }
+    .title {
+        font-size: 165%;
+    }
+    .usernameInput {
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #fff;
+        outline: none;
+        padding-bottom: 15px;
+        text-align: center;
+        width: 90%;
+    }
+}
+@media screen and (min-width: 500px) {/*大于500px屏幕*/
+    .wrapper {
+        display: none;
+        width: 500px;
+        padding: 5px 5px 12px 5px;
+        margin: 50px auto 0;
+        background-color: rgba(15, 23, 23, 0.4);;
+        border-radius: 10px;
+        position: relative;
+    }
+    .banner h1 {
+        margin: 10px;
+        font-size: 32px;
+        font-weight: bolder;
+    }
+    #historyMsg {
+        border-radius: 1%;
+        height: 400px;
+        background-color: rgba(255, 255, 255, 0.33);
+        overflow: auto;
+        padding: 5px 10px;
+    }
+    /*表情*/
+    #emojiWrapper {
+        display: none;
+        width: 480px;
+        bottom: 85px;
+        position: absolute;
+        background-color: rgba(163, 168, 170, 0.53);
+        box-shadow: 0 0 10px #555;
+        height: 162px;
+        border-radius:2px;
+    }
+    #emojiWrapper img {
+        margin: 2px;
+        padding: 2px;
+        width: 26px;
+        height: 26px;
+    }
+    .message {
+        font-size: 150%;
+    }
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../iconfont/iconfont.eot');
+    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../iconfont/iconfont.woff') format('woff'),
+    url('../iconfont/iconfont.ttf') format('truetype'),
+    url('../iconfont/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*font-size: 18px;*/
+    vertical-align: baseline;
+    font-family:
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    background: url("../image/1.jpg");
+    height: 100%;
+}
+footer{
+    margin-top: 10px ;
+}
+ul {
+    list-style: none;
+    word-wrap: break-word;
+    font-size: 20px;
+}
+li:after{
+    content:".";
+    display:block;
+    height:0;
+    visibility:hidden;
+    clear:both;
+}
+h1 img{
+    border-radius: 50%;
+}
+/*登陆输入框*/
+#info{
+    height: 100px;
+    margin-top: -50px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    font-size: 200%;
+}
+#loginbox {
+    display: none;
+}
+#loginWrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(5, 5, 5, 1);
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding-top: 200px;
+}
+.form {
+    height: 100px;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+.title {
+    font-size: 200%;
+}
+.usernameInput {
+    font-size: 200%;
+    letter-spacing: 3px;
+    color: #fff;
+    font-weight: 100;
+}
+.usernameInput {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 400px;
+}
+/*文字样式*/
+.log {
+    color: #606060;
+    font-size: 80%;
+    margin: 5px;
+    text-align: center;
+}
+.username {
+    font-weight: 700;
+    overflow: hidden;
+    padding-right: 10px;
+    text-align: right;
+    vertical-align: top;
+}
+#status{
+    font-size:18px;
+}
+/* Input */
+.inputMessage {
+    border: 10px solid #000;
+    height: 60px;
+    left: 0;
+    outline: none;
+    padding-left: 10px;
+    position: absolute;
+    right: 0;
+    width:100%;
+    box-sizing:border-box;
+}
+.inputMessage:after{
+    content:".";
+    display:block;
+    height:0;
+    visibility:hidden;
+    clear:both;
+}
+.banner {
+    width: 100%;
+}
+.controls {
+    margin: 5px 0px;
+    position: relative;
+    display: block;
+    height: 80px;
+}
+#historyMsg img {
+    max-width: 99%;
+}
+#historyMsg:after{
+    content:".";
+    display:block;
+    height:0;
+    visibility:hidden;
+    clear:both;
+}
+.timespan {
+    color: #ddd;
+}
+.items {
+    margin: 1px 10px 2px;
+    height: 24px;
+}
+/*custom the file input*/
+
+.imageLable {
+    position: relative;
+}
+#sendImage {
+    position: absolute;
+    width: 52px;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+/*表情*/
+#emojiWrapper img:hover {
+    background-color: blue;
+}
+.emoji{
+    display: inline;
+}
+footer {
+    text-align: center;
+}
+/*audio*/
+#maudio{
+    width: 64px;
+    height: 16px;
+    line-height: 16px;
+    position: absolute;
+    right: 0px;
+    top: 12px;
+}
+#startRecording{
+    -webkit-user-select: none;/*禁用手机浏览器的用户选择功能 */
+    -moz-user-select: none;
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Wayou">
+    <meta name="description" content="lcchat | a simple chat application built with node.js and websocket">
+    <meta name="Keywords" content="node.js,chat，websocket，lince">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+    <title>LC-chat</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="banner">
+        <h1><img src="image/favicon.ico"/> LC-Chat</h1>
+        <span id="status"></span>
+    </div>
+    <ul id="historyMsg">
+    </ul>
+    <div class="controls" >
+        <div class="items">
+            <button id="emoji"><i class="iconfont">&#xe602;</i></button>
+            <label for="sendImage" class="imageLable">
+                <input id="sendImage" type="file"/>
+                <button><i class="iconfont">&#xe6a0;</i></button>
+            </label>
+            <button id="clearBtn"><i class="iconfont">&#xe6fa;</i></button>
+            <button id="startRecording"><i class="iconfont">&#xe600;</i></button>
+            <audio id="maudio" controls autoplay style="display: none"></audio>
+        </div>
+        <input id="messageInput" class="inputMessage" placeholder="Type here..."/>
+        <div id="emojiWrapper"></div>
+    </div>
+</div>
+<div id="loginWrapper">
+    <p id="info">Connecting to server...</p>
+    <div id="loginbox" class="form">
+        <h3 class="title">What's your nickname?</h3>
+        <input class="usernameInput" type="text" maxlength="14" />
+    </div>
+</div>
+<footer>
+    <small><a href="http://www.lcdaoxin.com">my blog</a></small>
+</footer>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="/socket.io/socket.io.js"></script> <!--socket.io js必须引入-->
+<script src="js/chat.js"></script>
+</body>
+</html>

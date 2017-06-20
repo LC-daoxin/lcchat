@@ -1,0 +1,21 @@
+{
+  "name": "lcchat",
+  "version": "1.0.0",
+  "description": "lcchat | a simple chat application built with node.js and websocket",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.0",
+    "socket.io": "^2.0.2"
+  },
+  "engines": {
+    "node": "^4.5.0",
+    "npm": "^4.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "lince",
+  "license": "ISC"
+}
